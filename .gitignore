@@ -1,0 +1,53 @@
+# === IRON-GRID .gitignore ===
+
+# Sensitive credentials & secrets
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.csr
+secrets/
+credentials/
+.env
+.env.*
+
+# Fortigate raw config backups (may contain hashed passwords)
+infrastructure/configs/
+
+# LDAP bulk files (may contain cleartext passwords)
+*.ldif
+bulk_users.ldif
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+
+# Logs & temp files
+*.log
+*.tmp
+*.bak
+/tmp/
+
+# Archives
+*.zip
+*.tar.gz
+*.tar
